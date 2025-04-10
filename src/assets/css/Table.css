@@ -1,0 +1,46 @@
+@import url('../../index.css');
+
+.table-responsive {
+    max-width: 100%;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+thead {
+    background: var(--secondary);
+}
+
+th, td {
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    font-size: .9rem;
+}
+
+th {
+    color: var(--primary);
+    border-right: 1px solid var(--primary);
+}
+
+td {
+    color: var(--secondary);
+    padding: 2px auto;
+    border-right: 1px solid var(--tertiary);
+    padding: 2px 20px;
+}
+
+tr:nth-child(even) {
+    background: #dbdbdb;
+}
+
+.table-responsive::-webkit-scrollbar {
+    height: 4px; 
+    width: 3px;
+    background: var(--primary);
+}
+
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: var(--secondary); 
+    border-radius: 5px; 
+    cursor: pointer;
+}

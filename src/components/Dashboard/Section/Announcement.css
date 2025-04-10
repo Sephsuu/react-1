@@ -1,0 +1,25 @@
+.announcements {
+    flex: 6;
+    min-width: 0;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+.announcements::-webkit-scrollbar {
+    width: 3px; 
+}
+
+.announcements::-webkit-scrollbar-thumb {
+    background-color: var(--tertiary); 
+    border-radius: 5px; 
+}
+
+.announcements .caption p {
+    text-align: justify;
+}
+
+.announcement_user p {
+    color: var(--tertiary);
+    margin-top: -8px;
+    font-size: 14px;
+}

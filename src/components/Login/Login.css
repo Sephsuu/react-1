@@ -1,0 +1,63 @@
+@import url('../../index.css');
+
+.login_bg {
+    background: var(--primary);
+    height: 100vh; /* Full height of viewport */
+}
+
+.login_form {
+    background: #fff;
+    border: 1px solid #141414;
+    border-radius: 30px;
+    width: 400px;
+    margin: 70px auto;
+    box-shadow: 1px 2px 8px var(--tertiary);
+}
+
+.form_content {
+    margin: 30px;
+}
+
+.form_content input {
+    border: 1px solid var(--secondary);
+    margin: 20px 0;
+}
+
+.form_content input:focus {
+    box-shadow: 0 0 5px rgba(59, 59, 59, 0.927) !important;
+    border: 1px solid var(--tertiary) !important;
+}
+
+.form_content button {
+    padding: 5px 40px;
+}
+
+.form_content a {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .login_form {
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .login_form {
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .login_form {
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+}
+

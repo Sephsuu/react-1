@@ -1,0 +1,9 @@
+@import url("../../index.css");
+
+@media (max-width: 1039.98px) {
+    .navbar_bottom {
+        display: flex !important;
+        z-index: 1000;
+        background: var(--primary);
+    }
+}

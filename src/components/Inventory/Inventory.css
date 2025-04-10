@@ -1,0 +1,23 @@
+@import url("../../index.css");
+
+.inventory {
+    flex: 1;
+    max-height: 100vh;
+}
+
+.toggle_hide {
+    color: var(--secondary);
+}
+
+
+.inventory_button_group {
+    grid-template-columns: repeat(4, auto);
+    width: fit-content;
+
+}
+
+@media (max-width: 1039.98px)  {
+    .inventory {
+        padding-bottom: 100px;
+    }
+}

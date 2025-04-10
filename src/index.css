@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Gantari:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  --primary: #f8f8ff;
+  --secondary: #141414;
+  --tertiary: #707070;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  transition: ease all 0.5s;
+  font-family: "Noto Sans", serif;
+  font-optical-sizing: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--primary);
+}
+
+.btn {
+  /* 
+  text-decoration: none !important;
+  outline: none !important; 
+  */
+  text-decoration: none;
+  color: var(--tertiary);
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--secondary);
+}
+
+button {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.text-warning {
+  color: #db6e00 !important;
+}
+
+.font-p {
+  color: var(--primary);
+}
+
+.font-s {
+  color: var(--secondary);
+}
+
+.font-t {
+  color: var(--tertiary);
+}
+
+.font-sm {
+  font-size: 13px;
+}
+
+.font-md {
+  font-size: 18px;
+}
+
+.btn-black {
+  background: #141414;
+  color: var(--primary);
+  outline: 2px solid var(--secondary);
+}
+
+.btn-black:hover {
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+.btn-outline-black {
+  outline: 1px solid var(--secondary);
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+.btn-outline-black:hover {
+  outline: 1px solid var(--secondary);
+  background: var(--secondary);
+  color: var(--primary);
+}
+
+.btn-red {
+  outline: 2px solid rgb(173, 0, 0);
+  background: rgb(173, 0, 0);
+  color: var(--primary);
+}
+
+.btn-red:hover {
+  color: rgb(173, 0, 0);
+  outline: 2px solid rgb(173, 0, 0);
+}
+
+.btn-outline-red {
+  outline: 1px solid rgb(173, 0, 0);
+  background: var(--primary);
+  color: rgb(173, 0, 0);
+}
+
+.btn-outline-red:hover {
+  background: rgb(173, 0, 0);
+  color: var(--primary);
+}
+
+.papiverse_logo {
+  width: 200px;
+}
+
+@media (max-width: 1039.98px) {
+  .home_btn {
+      display: block !important;
+  }
+}
