@@ -1,58 +1,166 @@
 import { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 import "./HumanResource.css";
-import "../../assets/css/Table.css";
 import NavigationBar from "../NavigationBar/NavigationBar";
-import ButtonGroup from "../widgets/ButtonGroup";
-import Employees from "./Table/Employees";
-import Attendance from "./Table/Attendance";
-import Paychecks from "./Table/Paychecks";
+import Table from "./Table";
+import Dashboard from "./HrDashboard";
 
 export default function HumanResource() {
-    const [isHidden, setHidden] = useState(() => {
-        const savedState = localStorage.getItem("buttonGroupHidden");
-        return savedState === "true";
-    });
+    const [active, setActive] = useState("Table");
 
-    const hideButtonGroup = () => {
-        setHidden(prevState => {
-            const newState = !prevState;
-            localStorage.setItem("buttonGroupHidden", newState);
-            return newState;
-        });
-    };
+    const employees = [
+        {
+          id: 1,
+          first_name: "John",
+          last_name: "Doe",
+          email: "john.doe@company.com",
+          phone_number: "09171234567",
+          date_of_birth: "1990-05-20",
+          gender: "Male",
+          address: "123 Main Street, Cavite",
+          position: "Software Engineer",
+          hire_date: "2020-01-15",
+          employment_status: "Active",  
+          img: "/images/okotok.png",
+        },
+        {
+          id: 2,
+          first_name: "Jane",
+          last_name: "Smith",
+          email: "jane.smith@company.com",
+          phone_number: "09181234567",
+          date_of_birth: "1988-10-02",
+          gender: "Female",
+          address: "456 Elm Street, Tagaytay",
+          position: "HR Manager",
+          hire_date: "2018-03-10",
+          employment_status: "Active",
+          img: "/images/okotok.png",
+        },
+        {
+          id: 3,
+          first_name: "Michael",
+          last_name: "Tan",
+          email: "michael.tan@company.com",
+          phone_number: "09991234567",
+          date_of_birth: "1995-12-11",
+          gender: "Male",
+          address: "789 Oak Street, Dasmariñas",
+          position: "Marketing Specialist",
+          hire_date: "2021-06-01",
+          employment_status: "Probationary",
+          img: "/images/okotok.png",
+        },
+        {
+          id: 4,
+          first_name: "Alyssa",
+          last_name: "Reyes",
+          email: "alyssa.reyes@company.com",
+          phone_number: "09193456789",
+          date_of_birth: "1992-04-05",
+          gender: "Female",
+          address: "101 Pine St, Silang",
+          position: "UI/UX Designer",
+          hire_date: "2019-09-23",
+          employment_status: "Active",
+          img: "/images/okotok.png",
+        },
+        {
+          id: 5,
+          first_name: "Carlos",
+          last_name: "Dela Cruz",
+          email: "carlos.delacruz@company.com",
+          phone_number: "09221234567",
+          date_of_birth: "1985-07-07",
+          gender: "Male",
+          address: "202 Mango Ave, Indang",
+          position: "Finance Officer",
+          hire_date: "2016-05-18",
+          employment_status: "Active",
+          img: "/images/okotok.png",
+        },
+        {
+          id: 6,
+          first_name: "Carlos",
+          last_name: "Dela Cruz",
+          email: "carlos.delacruz@company.com",
+          phone_number: "09221234567",
+          date_of_birth: "1985-07-07",
+          gender: "Male",
+          address: "202 Mango Ave, Indang",
+          position: "Finance Officer",
+          hire_date: "2016-05-18",
+          employment_status: "Active",
+          img: "/images/okotok.png",
+        },
+        {
+          id: 7,
+          first_name: "Carlos",
+          last_name: "Dela Cruz",
+          email: "carlos.delacruz@company.com",
+          phone_number: "09221234567",
+          date_of_birth: "1985-07-07",
+          gender: "Male",
+          address: "202 Mango Ave, Indang",
+          position: "Finance Officer",
+          hire_date: "2016-05-18",
+          employment_status: "Active",
+          img: "/images/okotok.png",
+        },
+        {
+          id: 8,
+          first_name: "Carlos",
+          last_name: "Dela Cruz",
+          email: "carlos.delacruz@company.com",
+          phone_number: "09221234567",
+          date_of_birth: "1985-07-07",
+          gender: "Male",
+          address: "202 Mango Ave, Indang",
+          position: "Finance Officer",
+          hire_date: "2016-05-18",
+          employment_status: "Active",
+          img: "/images/okotok.png",
+        },
+        {
+          id: 9,
+          first_name: "Carlos",
+          last_name: "Dela Cruz",
+          email: "carlos.delacruz@company.com",
+          phone_number: "09221234567",
+          date_of_birth: "1985-07-07",
+          gender: "Male",
+          address: "202 Mango Ave, Indang",
+          position: "Finance Officer",
+          hire_date: "2016-05-18",
+          employment_status: "Active",
+          img: "/images/okotok.png",
+        },
+    ];
 
     const hrCount = 100
-
-    const [selectedTable, setSelectedTable] = useState("Total Employees");
     return(
-        <div className="d-flex w-100">
+        <div className="hr_lg d-flex w-100">
             <NavigationBar />
 
-            <div className="hr w-100 pb-5 overflow-x-hidden overflow-y-auto">
-                <div className="d-flex justify-content-between align-items-center">
-                    <button className="btn toggle_hide d-flex align-items-center" onClick={ () => hideButtonGroup() }>
-                        <h5 className="fw-bold mt-2">Human Resource</h5> 
-                        <div className="ms-2"><img src="/images/down.png" width="10px" /></div>
-                    </button>
-                    <Link to="/dashboard" className="home_btn me-4 d-none"><img src="/images/home.png" width="15px" /></Link>
-                </div>
-                <div className={ isHidden ? "d-none" : "hr_button_group d-grid" }>
-                    <ButtonGroup imagePath="/images/employee.png" count={ hrCount } description="Total Employees" setSelectedTable={ setSelectedTable }></ButtonGroup>
-                    <ButtonGroup imagePath="/images/attendance.png" description="Attendance" setSelectedTable={ setSelectedTable }></ButtonGroup>
-                    <ButtonGroup imagePath="/images/paycheck.png" description="Payroll/Paycheck" setSelectedTable={ setSelectedTable }></ButtonGroup>
+            <div className="overflow-x-auto">
+                <div className="d-flex justify-content-between mx-4">
+                    <div className="hr_nav d-flex justify-content-between rounded-pill mt-2" style={{ background: "#fff" }}>
+                            <button onClick={ () => setActive("Table") } className={`btn rounded-pill font-sm ${active === "Table" ? "active" : ""}`}>Tables</button>
+                            <button onClick={ () => setActive("Dashboard") } className={`btn rounded-pill font-sm ${active === "Dashboard" ? "active" : ""}`}>Dashboard</button>
+                    </div>
+                    <div className="mt-2">
+                        <Link to="/dashboard" className="home_btn me-4 d-none"><img src="/images/home.png" width="15px" /></Link>
+                    </div>
                 </div>
 
                 {
-                    selectedTable === "Total Employees" ? (
-                        <Employees />
-                    ) : selectedTable === "Attendance" ? (
-                        <Attendance />
-                    ) : (
-                        <Paychecks />
-                    )
+                    active === "Table" ? (
+                        <Table employees={ employees }/>
+                    ) : <Dashboard employees={ employees }/>
+                    
                 }
+
             </div>
         </div>
     );

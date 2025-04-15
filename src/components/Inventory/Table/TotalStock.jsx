@@ -41,6 +41,286 @@ export default function TotalStock() {
             unitCost: 300.00,
             totalCost: 2300.00
         },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
+        {
+            id: 1,
+            name: "Total Stock",
+            description: "1 Kilograms",
+            quantity: 20,
+            unitCost: 300.00,
+            totalCost: 2300.00
+        },
     ];
 
 

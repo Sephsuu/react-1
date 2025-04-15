@@ -1,0 +1,18 @@
+.notifications {
+    flex: 4;
+}
+
+.notifications {
+    min-width: 0;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+.notifications::-webkit-scrollbar {
+    width: 3px; 
+}
+
+.notifications::-webkit-scrollbar-thumb {
+    background-color: var(--tertiary); 
+    border-radius: 5px; 
+}

@@ -1,14 +1,31 @@
 @import url("../../index.css");
 
-.hr {
-    flex: 1;
+.hr_lg {
     max-height: 100vh;
+    overflow-x: hidden;
+    background-image: url("/images/hr_bg.svg");
+}
+
+.hr_nav {
+    align-items: flex-start; /* don't stretch vertically */
+    height: auto;
+    width: fit-content;            /* allow height to be based on content */
+    max-height: max-content;
+}
+
+.hr_lg .active {
+    background: var(--darkorange);
+    border: none;
+    color: #fff;
+}
+
+.hr_dashboard {
+    padding-bottom: 50px;
 }
 
 .toggle_hide {
     color: var(--secondary);
 }
-
 
 .hr_button_group {
     grid-template-columns: repeat(4, auto);

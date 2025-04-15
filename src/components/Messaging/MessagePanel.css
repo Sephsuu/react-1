@@ -1,0 +1,36 @@
+@import url("../../index.css");
+
+.message_panel {
+    height: 100vh;
+    width: 75%;
+}
+
+.message_panel .branch_header {
+    box-shadow: 5px 1px 1px var(--tertiary);
+    background: var(--primary);
+}
+
+.message_panel p {
+    width: auto;
+    margin-bottom: -1px;
+}
+
+.message_panel .send {
+    background: linear-gradient(183deg,rgba(222, 55, 0, 1) 0%, rgba(196, 51, 29, 1) 57%, rgba(196, 59, 0, 1) 100%);
+    color: var(--primary);
+}
+
+.message_panel .receive {
+    background: #cfcfcf;
+    color: var(--secondary);
+}
+
+@media (max-width: 1039.98px)  {
+    .message_panel {
+        width: 100%;
+    }
+    
+    .message_panel .btn {
+        display: block !important;
+    }
+}

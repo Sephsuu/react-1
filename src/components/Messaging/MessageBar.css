@@ -1,0 +1,55 @@
+.message_bar,
+.hide_msg_bar {
+    height: 100vh;
+    width: 25%;
+    overflow-y: auto;
+}
+
+.message_bar::-webkit-scrollbar, 
+.hide_msg_bar::-webkit-scrollbar {
+    width: 4px; 
+}
+
+.message_bar::-webkit-scrollbar-thumb,
+.hide_msg_bar::-webkit-scrollbar-thumb {
+    background-color: var(--tertiary); 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.message_bar button {
+    border-bottom: 1px solid #a9a9a9 !important;
+}
+
+.message_bar .x {
+    border-bottom: none !important;
+}
+
+.message_bar h6,
+.hide_msg_bar h6 {
+    font-size: .9rem;
+}
+
+.branch_dp {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+@media (max-width: 1039.98px)  {
+    .message_bar {
+        position: absolute !important;
+        z-index: 1030;
+        background: var(--primary);
+    }
+
+    .hide_msg_bar {
+        position: absolute;
+        margin-left: -500px;
+        z-index: 1030;
+    }
+
+    .message_bar .x {
+        display: flex !important;
+    }
+}

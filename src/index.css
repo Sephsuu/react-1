@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Gantari:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+/* COLOR SCHEME */
 :root {
   --primary: #f8f8ff;
   --secondary: #141414;
   --tertiary: #707070;
+  --darkblue: #000015;
+  --blue: #183040;
+  --skyblue: #0083A3;
+  --darkorange: #bf3612;
+  --orange: #f24f09;
+  --darkred: #731c13;
 }
 
+/* ELEMENT CONFIGURATION */
 * {
   margin: 0;
   padding: 0;
@@ -56,6 +63,8 @@ button {
   color: #db6e00 !important;
 }
 
+/* FONT COLORS */
+
 .font-p {
   color: var(--primary);
 }
@@ -75,6 +84,30 @@ button {
 .font-md {
   font-size: 18px;
 }
+
+.font-lg {
+  font-size: 24px;
+}
+
+/* BACKGROUND COLORS */
+
+.bg-darkred {
+  background: var(--darkred);
+}
+
+.bg-blue {
+  background: var(--blue);
+}
+
+.bg-skyblue {
+  background: var(--skyblue);
+}
+
+.bg-darkblue {
+  background: var(--darkblue) !important;
+}
+
+/* BUTTONS */
 
 .btn-black {
   background: #141414;

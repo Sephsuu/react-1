@@ -4,10 +4,11 @@
     max-width: 100%;
     max-height: 100vh;
     overflow-y: auto;
+    background: var(--primary);
 }
 
 thead {
-    background: var(--secondary);
+    background: var(--darkblue);
 }
 
 th, td {

@@ -14,7 +14,7 @@ function Login() {
                     <input className="form-control" type="password" placeholder="Password" />
                     <div className="d-flex flex-column justify-content-center text-center">
                         <div className="d-flex justify-content-center">
-                            <button onClick={ () => window.location.href = "https://sephsuu.github.io/react-1/dashboard/" } className="btn btn-black mt-2" type="button" to="/dashboard">Login</button>
+                            <button onClick={ () => window.location.href = "http://localhost:5173/dashboard" } className="btn btn-black mt-2" type="button" to="/dashboard">Login</button>
                         </div>
                         <a className="my-4 btn" href="#">Forgot Password</a>
                         <a className="mb-4 btn" href="#">Reset Password</a>
